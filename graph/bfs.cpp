@@ -1,6 +1,6 @@
-#include "main.h"
-
 #include <iostream>
+
+#include "main.hpp"
 
 template <typename T>
 std::vector<unsigned> breadthFirst(const Graph<T>& G, unsigned start) {

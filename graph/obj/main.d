@@ -1,4 +1,4 @@
-obj/main.o: src/main.cc /usr/include/stdc-predef.h src/main.h \
+obj/main.o: src/main.cpp /usr/include/stdc-predef.h src/main.hpp \
  /usr/include/c++/9/iostream \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \

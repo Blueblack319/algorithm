@@ -16,16 +16,16 @@ OBJ_DIR = ./obj
 TARGET = main
 
 # Source files
-SRCS = $(notdir $(wildcard $(SRC_DIR)/*.cc))
+SRCS = $(notdir $(wildcard $(SRC_DIR)/*.cpp))
 
-OBJS = $(SRCS:.cc=.o)
+OBJS = $(SRCS:.cpp=.o)
 
 OBJECTS = $(patsubst %.o, $(OBJ_DIR)/%.o,$(OBJS))
 DEPS = $(OBJECTS:.o=.d)
 
 all: main
 
-$(OBJ_DIR)/%.o : $(SRC_DIR)/%.cc
+$(OBJ_DIR)/%.o : $(SRC_DIR)/%.cpp
 	$(CC) $(CXXFLAGS) -c $< -o $@ -MD $(LDFLAGS)
 
 $(TARGET) : $(OBJECTS)
